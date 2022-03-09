@@ -132,7 +132,7 @@ class Creature {
 			let b = a || ((green(this.color) < 100 && red(this.color) < 150 ) && green(vegetal.color) >= 100);
             if(!b) vectorList.push(vec.normalize().mult(vegetal.attraction*green(this.color)/red(this.color) * (100 - this.food) / (1 + distance)));
             if (distance <= this.size) {
-                if (vegetal.size > 7 && vegetals.length < 1300)
+                if (vegetal.size > 7 && vegetals.length < 2500)
                 for (let j = 0; j < int(random(0, vegetal.size / 2)); j++) {
                     let x = this.position.x + random(-30, 30);
                     let y = this.position.y + random(-30, 30);
