@@ -38,7 +38,7 @@ class Vegetal {
 				distst = this.position.dist(vegetal.position);
 				if(distst > this.range) continue;
 				
-				if(distst < ((1 + this.maxsize - this.maxsize * exp(-this.size / 25))) && this.size/2 > vegetal.size && distst != 0){
+				if(distst < this.size && distst != 0){
 				  this.size = ((this.size + vegetal.size/3) > this.maxsize ? this.maxsize : (this.size + vegetal.size/3));
 				  vegetal.size = -1;
 				  continue;
